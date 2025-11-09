@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #0A1F44;
+}
+
+/* Hero section with background image */
+.hero {
+  background-image: url('assets/double-yolk.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+}
+
+/* Overlay to improve text visibility */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(10, 31, 68, 0.6); /* Dark blue with transparency */
+  z-index: 1;
+}
+
+/* Hero content stays above overlay */
+.hero h1,
+.hero p,
+.hero a {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.hero a {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #FFD700;
+  color: #0A1F44;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Section styling */
+.section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Product cards */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.card {
+  border: 2px solid #FFD700;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card .price {
+  color: #FFD700;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.card input,
+.card select {
+  margin-top: 10px;
+  padding: 8px;
+  width: 90%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  color: #0A1F44;
+}
+
+.card button {
+  background-color: #0A1F44;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #0A1F44;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+}
+
+.footer p:last-child {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #FFD700;
+}
+
